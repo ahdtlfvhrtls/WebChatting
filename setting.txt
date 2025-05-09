@@ -2,7 +2,7 @@
     컬렉션 구성:
         1. user컬렉션 : _id, nickname, email, phone, userid, image, createdAt
         2. chatRoom컬렉션: _id, name(방이름), participants(참가자)->{[user.nickname], ...}, createdAt
-        3. messge컬렉션: _id, RoomId -> (chatRoom.name), sendUser -> ([user.nickname, user.image]), text, readBy -> {user.nickname, ...}
+        3. messge컬렉션: _id, RoomId -> (chatRoom.name), sendUser -> ([user.nickname, user.image]), text, readBy -> count{user.nickname, ...}, createdAt
 
 #API
     STT: 웹 STT사용(안될시 Google Cloud Speech-to-Text 사용)
