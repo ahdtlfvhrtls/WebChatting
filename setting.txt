@@ -1,0 +1,21 @@
+# DB : 몽고DB 사용
+    컬렉션 구성:
+        1. user컬렉션 : _id, nickname, email, phone, userid, createdAt
+        2. chatRoom컬렉션: _id, name(방이름), participants(참가자)->{user.nickname, ...}, createdAt
+        3. messge컬렉션: _id, RoomId -> (chatRoom.name), sendId -> (user.nickname), text, readBy -> {user.nickname, ...}
+
+#API
+    STT: Google Cloud Speech-to-Text 사용
+    지도: Google 맵 or kakao 맵 사용
+    문자: 쿨 sms 사용
+
+#백엔드
+    nodejs 사용
+
+#명령어 구성[파싱(크롤링)]
+    날씨: 네이버 날씨정보 파싱
+    검색: 구글 검색결과 링크 제공
+    뉴스: 네이버 뉴스 정보 파싱 및 뉴스 링크 제공
+    유튜브: 유튜브 검색결과 html파싱을 통한 최상단 동영상 링크 추출 -> 해당 동영상 화면에 출력
+
+
