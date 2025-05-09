@@ -11,6 +11,8 @@
 
 #백엔드
     nodejs 사용
+    jwt 토큰 인증 사용
+    필요 모듈: dotenv, express, jsonwebtoken, mongodb, bcryptjs 등등
 
 #명령어 구성[파싱(크롤링)]
     날씨: 네이버 날씨정보 파싱
