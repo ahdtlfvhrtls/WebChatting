@@ -5,14 +5,14 @@
         3. messge컬렉션: _id, RoomId -> (chatRoom.name), sendId -> (user.nickname), text, readBy -> {user.nickname, ...}
 
 #API
-    STT: Google Cloud Speech-to-Text 사용
+    STT: 웹 STT사용(안될시 Google Cloud Speech-to-Text 사용)
     지도: Google 맵 or kakao 맵 사용
     문자: 쿨 sms 사용
 
 #백엔드
     nodejs 사용
     jwt 토큰 인증 사용
-    필요 모듈: dotenv, express, jsonwebtoken, mongodb, bcryptjs 등등
+    필요 패키지 모듈: dotenv, express, jsonwebtoken, mongodb, bcryptjs, @google-cloud/speech 등등
 
 #명령어 구성[파싱(크롤링)]
     날씨: 네이버 날씨정보 파싱
